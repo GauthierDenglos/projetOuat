@@ -56,5 +56,54 @@ namespace WebApplication1.Controllers
                 return "Failed to add";
             }
         }
+
+        public string Put(Command command)
+        {
+            try
+            {
+                DataTable db = new DataTable();
+                string query = @"update dbo.Command set productName = '" + command.productName + @"'
+                                , commandDate = '" + command.commandDate + @"'
+                                , commandDescription = '" + command.commandDescription + @"'
+                                where commandId = " + command.commandId + @"
+                                ";
+                using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["ProductAppDB"].ConnectionString))
+                using (var cmd = new SqlCommand(query, con))
+                //fill the db with everything return by the Query
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    da.Fill(db);
+                }
+                return "Updated successfully";
+            }
+            catch (Exception ex)
+            {
+                return "Failed to update";
+            }
+        }
+
+        //Delete the row corresponding to the id given in parameter
+        public string Delete(int id)
+        {
+            try
+            {
+                DataTable db = new DataTable();
+                string query = @" delete from dbo.Command where commandId = " + id;
+                using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["ProductAppDB"].ConnectionString))
+                using (var cmd = new SqlCommand(query, con))
+                //fill the db with everything return by the Query
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    da.Fill(db);
+                }
+                return "Deleted successfully";
+            }
+            catch (Exception ex)
+            {
+                return "Failed to delete";
+            }
+        }
     }
 }
