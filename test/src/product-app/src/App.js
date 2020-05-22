@@ -2,23 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//Import the buttons lib from ract-boostrap (needed an installation)
+import Button from 'react-bootstrap/Button'
+
+//primary gives a blue color to the button
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Hello world !</h2>
+      <Button variant="primary"> Button test Bootstrap </Button>
     </div>
   );
 }
