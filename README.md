@@ -4,4 +4,5 @@ Application used : - Git bash to add, commit, et push on github
 		   to intereact with the database
 		   - Test the queries : Postman
 		   - Make a database : Microsoft SQL server management studio 18
-		   - Nodejs cmd prompt
+		   - Nodejs cmd prompt / Visual studio code
+		   - React bootstrap
