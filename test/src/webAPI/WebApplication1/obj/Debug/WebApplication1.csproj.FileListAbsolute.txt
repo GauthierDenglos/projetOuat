@@ -55,7 +55,9 @@ C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\b
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\Newtonsoft.Json.dll
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Net.Http.Formatting.dll
+C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.Cors.dll
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.Http.Cors.dll
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.Http.dll
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.Http.WebHost.dll
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.Mvc.dll
@@ -65,6 +67,7 @@ C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\b
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.WebPages.dll
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.WebPages.Razor.dll
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\WebGrease.dll
+C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.Http.Cors.xml
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\Newtonsoft.Json.xml
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Net.Http.Formatting.xml
 C:\Users\gauth\Desktop\Documents\s6\projetOuat\test\src\webAPI\WebApplication1\bin\System.Web.Helpers.xml

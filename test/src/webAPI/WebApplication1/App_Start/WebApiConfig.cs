@@ -6,6 +6,8 @@ using System.Web.Http;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
+using System.Web.Http.Cors;
+
 namespace WebApplication1
 {
     public static class WebApiConfig
@@ -25,6 +27,9 @@ namespace WebApplication1
 
             //Force to responde in json format
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+
+            //* means all the methods
+            config.EnableCors(new EnableCorsAttribute("http://localhost:3000", "*", "*"));
         }
     }
 }

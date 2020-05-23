@@ -1,12 +1,16 @@
 import React, {Component} from "react";
 import {Table} from "react-bootstrap";
 
+//import the add button, to add a product in the database. Use pop up windows
+import {Button, ButtonToolbar} from 'react-bootstrap'
+import {AddDepModal} from './AddDepModal'
+
 export class Product extends Component {
 
     constructor(props){
         super(props);
         //to use this, you have to use super before. Here we create an object containing prod
-        this.state ={prod:[]}
+        this.state ={prod:[], addModalShow : false}
     }
 
     componentDidMount(){
@@ -27,8 +31,10 @@ export class Product extends Component {
 
     render(){
         const {prod} = this.state;
+        let addModalClose =() => this.setState({addModalShow:false})
         //mt = margin top, th = headers
         return (
+        <div>
         <Table className="mt-4" striped bordered hover size="sm">
         <thead>
             <tr>
@@ -44,8 +50,19 @@ export class Product extends Component {
                 </tr>
                 )}
         </tbody>
-        
         </Table>
+
+        <ButtonToolbar>
+            <Button
+            variant='primary'
+            onClick={()=> this.setState({addModalShow: true})}>
+            Add a product
+            </Button>
+
+            <AddDepModal show={this.state.addModalShow}
+            onHide={addModalClose}/>
+        </ButtonToolbar>
+        </div>
         )
     }
 }

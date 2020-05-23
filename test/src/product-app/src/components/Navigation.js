@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
 
+//represent the toolbar, to navigate between product and command
+
 export class Navigation extends Component{
     render(){
         return(
