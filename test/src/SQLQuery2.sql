@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS dbo.Command;
 CREATE TABLE dbo.Command
 (
